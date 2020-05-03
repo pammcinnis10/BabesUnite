@@ -1,0 +1,46 @@
+@import "normalize";
+@import "nav";
+@import "home";
+@import "story";
+@import "party";
+@import "rsvp";
+@import "faq";
+@import "details";
+
+$primary-color: #EA3546;
+$title-font: 'Pacifico', cursive;
+$text-color: #282828;
+$light-gray: #E8E8E8;
+
+// Yellow: FFBF00 255 191 0
+// Orange: FFBF00 248 102 36
+// Pink: EA3546 238 53 70
+// Purple: 662E9B 102 46 155
+// Blue: 43BCCD 67 188 205
+// Navy: 003366
+// Gray: #F8F8F8
+// Gold: #CCAC00
+
+html {
+	font-size: 62.5%;
+}
+
+img {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+	// border: 1px solid black;
+}
+
+
+.footer {
+	width: 100%;
+	height: 50px;
+	background-color: #EA3546;
+	
+}

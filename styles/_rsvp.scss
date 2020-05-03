@@ -1,0 +1,38 @@
+.rsvpwrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 175px;
+}
+
+.rsvpPage {
+	background-image: url("/assets/faq/detailsbackground.jpg");
+	background-size: 100%;
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+@media (max-width:1358px) {
+	.rsvpPage {
+		background-size: 200%;
+	}
+}
+
+@media (max-width:680px) {
+	.rsvpPage {
+		background-size: 300%;
+	}
+}
+
+@media (max-width: 480px) {
+
+	.rsvpwrapper {
+		margin-top: 105px;
+	}
+
+}
+
+@media (max-width: 400px) {
+	.rsvpPage {
+		background-size: 300%;
+	}	
+}

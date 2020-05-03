@@ -1,0 +1,122 @@
+$primary-color: #EA3546;
+$text-color: #282828;
+$title-font: 'Pacifico', cursive;
+
+
+.detailsPage {
+	background: url("/assets/faq/detailsbackground.jpg");
+	background-size: 100%;
+	background-attachment: fixed;
+	background-repeat: repeat;
+}
+
+.detailsWrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 50%;
+}
+
+.detailTitle{
+	color: $primary-color;
+	font-family: $title-font;
+	font-size: 4rem;
+}
+
+.placeBox {
+	padding-top: 200px;
+	text-align: center;
+}
+
+.accomBox {
+	padding-top: 75px;
+	text-align: center;
+}
+
+.box { 
+	font-size: 2rem;
+	font-family: 'Poppins', sans-serif; 
+	text-align: center;
+	color: $text-color;
+	h3 {
+		color: $primary-color;
+		font-size: 3rem;
+	}
+	a {
+		text-decoration: none;
+		color: $text-color;
+	}
+	i {
+		color: #585858;
+		font-size: 4rem;
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}
+
+.bold {
+	color:black;
+}
+
+.boxThree, .boxFour {
+	padding-top: 35px;
+	p {
+		line-height: 2;
+	}
+	ul {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding-left: 30%;
+		text-align: left;
+		li {
+			list-style: disc;
+			color: $text-color;
+		}
+	}
+
+}
+
+.boxFour {
+	padding-bottom: 50px;
+}
+
+.pink {
+	color: $primary-color;
+}
+
+@media (max-width: 1000px) {
+	.box {
+		ul {
+			padding-left: 20%;
+		}
+	}
+}
+
+// @media (max-width: 800px) {
+// 	.detailsPage {
+// 		background-size: 350%;
+// 	}
+// }
+
+@media (max-width: 680px) {
+
+	.detailTitle {
+		font-size: 3rem;
+	}
+
+	.box h3 {
+		font-size: 2.5rem;
+	}
+	.placeBox {
+		padding-top: 125px;
+		.boxTwo {
+			padding-top: 100px;
+		}
+	}
+	.accomBox2 {
+		padding-top: 40px;
+	}
+
+}

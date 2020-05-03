@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BabesUnite</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Leckerli+One|Poppins:300|Hind+Siliguri|Paytone+One|Pacifico|Lobster" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="shortcut icon" type="image/png" href="/assets/Fire_Flower.png">
+</head>
+<body>
+
+<!-- 	<header> -->
+		<div class="mainGallery">
+			<div class="galleryItem"><img src="assets/header/imagec1.jpg" alt=""></div>
+			<div class="galleryItem"><img src="assets/header/imagec2.jpg" alt=""></div>
+			<div class="galleryItem"><img src="assets/header/imagec3.jpg" alt=""></div>
+			<div class="galleryItem item5"><img src="assets/header/imagec5.jpg" alt=""></div>
+			<div class="galleryItem item6"><img src="assets/header/imagec6.jpg" alt=""></div>
+
+		</div>
+
+		<div class="nav navfixed">
+			<div class="countdownContainer">
+				<div class="countdown"></div>
+			</div>
+			<div class="title hvr-grow"><a href="index.html">
+				<h1><span>Brock</span><span class="plus">+</span><span>Laura</span></h1>
+			</a>
+			</div>
+			<div class="bars" onclick=""><i class="fas fa-bars"></i></div>
+			<ul>
+				<li class="menuItem"><a href="rsvp.html">RSVP!</a></li>
+				<li class="menuItem"><a href="details.html">Details</a></li>
+				<li class="menuItem"><a href="story.html">Our Story</a></li>
+				<li class="menuItem"><a href="party.html">Party</a></li>
+				<li class="menuItem"><a href="faq.html">FAQ</a></li>
+			</ul>
+		</div>
+
+
+
+
+<!-- 		<div class="nav">
+			<h1>Brock & Laura</h1>
+			<ul>
+				<li><a href="#rsvp">RSVP</a></li>
+				<li><a href="story.html">Story</a></li>
+				<li><a href="#party">Party</a></li>
+				<li><a href="#details">Details</a></li>
+				<li><a href="#faq">FAQ</a></li>
+			</ul>
+		</div> -->
+
+
+<!-- 	</header> -->
+<!-- 	<div class="countdown">
+		<span class="clock"></span>
+	</div> -->
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+	
+	<script>
+		$(function() {
+			if ($(window).width() > 865) {
+				$('.mainGallery').flickity({
+					autoPlay: 4000,
+					friction: .5,
+					// autoPlay: 2500,
+					// fullscreen: true,
+					wrapAround: true,
+					pauseAutoPlayOnHover: false
+				});
+			}
+			else {
+				$('.mainGallery').show();
+			}
+
+			$('.countdown').countdown('2019/06/08').on('update.countdown', function(event) {
+			  var $this = $(this).html(event.strftime(''
+			    + '<span>%-w</span> week%!w &nbsp;'
+			    + '<span>%-d</span> day%!d &nbsp;'
+			    + '<span>%H</span> hr &nbsp;'
+			    + '<span>%M</span> min &nbsp;'
+			    + '<span>%S</span> sec'));
+			});
+
+
+
+
+		// $(function() {
+		// 	var clock = $('.countdown').FlipClock({
+// ... your options here
+			// 	});
+
+			// });
+
+		});
+
+	</script>
+
+
+</body>
+</html>

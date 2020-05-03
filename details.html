@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BabesUnite</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Leckerli+One|Poppins:300|Hind+Siliguri|Paytone+One|Pacifico|Lobster|Mali" rel="stylesheet">
+	<link rel="stylesheet" href="styles/styles.css"/>
+	<link rel="shortcut icon" type="image/png" href="/assets/Fire_Flower.png">
+</head>
+<body>
+<div class="detailsPage">
+
+	<div class="nav">
+		<div class="countdownContainer countdownOff">
+			<div class="countdown"></div>
+		</div>
+		<div class="title hvr-grow"><a href="index.html">
+			<h1><span>Brock</span><span>+</span><span>Laura</span></h1>
+		</a>
+		</div>
+		<div class="bars" onclick=""><i class="fas fa-bars"></i></div>
+		<ul>
+			<li class="menuItem"><a href="rsvp.html">RSVP!</a></li>
+			<li class="menuItem"><a href="details.html">Details</a></li>
+			<li class="menuItem"><a href="story.html">Our Story</a></li>
+			<li class="menuItem"><a href="party.html">Party</a></li>
+			<li class="menuItem"><a href="faq.html">FAQ</a></li>
+		</ul>
+	</div>
+
+	<div class="wrapper detailsWrapper">
+
+		
+
+			<div class="placeBox box 	boxOne">	
+				<h2 class="detailTitle">Place & Time</h2>
+				<h3>Saturday, June 8th, 2019 at 4:00pm</h3>
+				<h3>Whispering Springs</h3>
+				<div>
+					<p>141 Mercer Lane</p>
+					<p>Grafton, Ontario, Canada</p>
+					<a href="https://goo.gl/maps/Cr3CkaMWdUC2"><i class="fas fa-map-marked-alt"></i></a>
+				</div>
+			</div>
+
+		<div class="accomBox accomBox2">
+			<h2 class="detailTitle">Accommodations</h2>
+			<div class="box boxTwo">
+				<h3>Hotels</h3>
+				<a href="https://www.reservations.com/hotel/best-western-plus-cobourg-inn-and-convention-centre?rmcid=dsa&gclid=EAIaIQobChMIrKWe39LS3wIVRbjACh1BBw0OEAAYAiAAEgLs__D_BwE"><p class="bold">Best Western Plus Cobourg Inn & Convention Centre</p></a>
+				<p>920 Burnham Street</p> <p>Cobourg, Ontario, Canada</p>
+				<p class="phone">+1 (905) 372-2105</p>
+				<a href="https://goo.gl/maps/NBdurZaBQLu"><i class="fas fa-map-marked-alt"></i></a>
+				<p>Call for rooms, under "Brock & Laura’s Wedding"</p>
+				<p>Shuttle bus will run between hotel and venue to pick up and drop off guests</p>
+				<p>Pick up time: 3:00pm</p>
+				<p>Drop of times: 10:30pm & 12:30am</p>
+
+				<br><br>
+				<a href=""><p class="bold">Comfort Inn</p></a>
+				<p>121 Densmore Road</p> <p>Cobourg, Ontario, Canada</p>
+				<p class="phone">+1 (905) 372-7007</p>
+				<a href="https://maps.app.goo.gl/ydYj3H1XDSrQY37P6"><i class="fas fa-map-marked-alt"></i></a>
+				<p>Call for rooms, under "Ireton/Easter Wedding"</p>
+				
+			</div>
+		
+			
+			<div class="box boxThree">
+				<h3>Airbnb</h3>
+				<p>If you prefer an Airbnb accomodation, check out some listings <a href="https://www.airbnb.ca/s/Cobourg--ON/homes?query=Cobourg%2C%20ON&checkin=2019-06-08&checkout=2019-06-09&adults=2&children=0&infants=0&guests=2&place_id=ChIJMejV6KfF1YkRuxSXg6U4iK0&refinement_paths%5B%5D=%2Fhomes&toddlers=0&allow_override%5B%5D=&s_tag=M2WZ9v0K"><span class="pink">here!</span></a> Please note that shuttles will not pick up and drop off from Airbnbs, so don't forget to arrange transportation, or take the bus to and from the hotel.</p>		
+			</div>
+
+			<div class="box boxFour">
+				<h3>Ste. Anne's Spa</h3>
+				<p>A beautiful spa in Haldimand Hills featuring horsies and a gluten-free bakery! Click <a href="http://www.steannes.com/accommodations.html"><span class="pink">here</span></a> to book a room.</p>
+				<a href="https://goo.gl/maps/sMA4SsLrWQS2"><i class="fas fa-map-marked-alt"></i></a>
+			</div>
+
+			<div class="box boxFour">
+				<h3>Rent an RV!</h3>
+				<p>And park it right at Whispering Springs! Check out <a href="https://www.rvezy.com"><span class="pink">RVezy</span></a> and <a href="http://owascorv.com/"><span class="pink"> RV Centre</span></a> and experience the benefits of:</p>
+				<ul>
+					<li>More time to party with us!</li>
+					<li>Access to pool, hot tub, beach volleyball court, kayaks, forest yoga</li>
+					<li>Walk to ceremony and reception</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	
+	<div class="footer"></div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+
+	<script>
+		$(function() {
+
+			$('.countdown').countdown('2019/06/08').on('update.countdown', function(event) {
+			  var $this = $(this).html(event.strftime(''
+			    + '<span>%-w</span> week%!w &nbsp;'
+			    + '<span>%-d</span> day%!d &nbsp;'
+			    + '<span>%H</span> hr &nbsp;'
+			    + '<span>%M</span> min &nbsp;'
+			    + '<span>%S</span> sec'));
+			});
+
+
+		});
+
+	</script>
+
+	
+</body>
+</html>
